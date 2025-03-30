@@ -130,6 +130,8 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.env*
+.DS_Store*
 env/
 venv/
 ENV/
@@ -209,4 +211,5 @@ override.tf.json
 
 # Ignore CLI configuration files
 .terraformrc
+.terraform.lock*
 terraform.rc
