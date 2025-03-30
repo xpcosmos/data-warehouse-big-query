@@ -31,6 +31,6 @@ resource "google_service_account_key" "airflow" {
 }
 
 resource "local_file" "private_key_file" {
-  content  = google_service_account_key.airflow.private_key
+  content  = base64decode(google_service_account_key.airflow.private_key)
   filename = var.private_key_path
 }

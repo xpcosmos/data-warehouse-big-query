@@ -213,3 +213,7 @@ override.tf.json
 .terraformrc
 .terraform.lock*
 terraform.rc
+airflow/logs 
+airflow/plugins
+airflow/config
+*.cfg
