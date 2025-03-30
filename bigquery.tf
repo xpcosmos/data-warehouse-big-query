@@ -1,21 +1,21 @@
 terraform {
   required_providers {
     google = {
-      source = "hashicorp/google"
+      source  = "hashicorp/google"
       version = "6.27.0"
     }
   }
 }
 
 provider "google" {
-  region = "us-central1"
+  region  = "us-central1"
   project = var.project
 }
 
 resource "google_service_account" "airflow" {
   account_id   = var.account_id
   display_name = var.display_name
-  project = var.project
+  project      = var.project
 }
 
 
@@ -27,7 +27,7 @@ resource "google_project_iam_member" "airflow" {
 
 resource "google_service_account_key" "airflow" {
   service_account_id = google_service_account.airflow.name
-  private_key_type    = var.private_key_type
+  private_key_type   = var.private_key_type
 }
 
 resource "local_file" "private_key_file" {

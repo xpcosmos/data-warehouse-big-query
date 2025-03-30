@@ -1,11 +1,11 @@
 variable "account_id" {
- description = "Identificador unico da conta"
- type        = string
+  description = "Identificador unico da conta"
+  type        = string
 }
 
 variable "display_name" {
   description = "Nome de exibição de conta"
-  type = string
+  type        = string
 }
 
 variable "project" {
@@ -17,11 +17,11 @@ variable "airflow_role" {
 }
 
 variable "private_key_type" {
-    description = "Tipo de chave retornada para conexão com GCP"
-    
+  description = "Tipo de chave retornada para conexão com GCP"
+
 }
 
 variable "private_key_path" {
-    description = "Caminho da chave cadastrada"
-    
+  description = "Caminho da chave cadastrada"
+
 }
