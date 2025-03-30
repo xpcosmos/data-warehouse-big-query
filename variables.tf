@@ -25,3 +25,11 @@ variable "private_key_path" {
   description = "Caminho da chave cadastrada"
 
 }
+
+variable "table_id" {
+  description = "Identificador unico de tabela"
+}
+
+variable "dataset_id" {
+  description = "Identificador unico de Dataset do BQ"
+}
